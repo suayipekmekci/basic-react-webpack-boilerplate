@@ -1,35 +1,35 @@
 const webpack = require('webpack');
-const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: {
     app: './src/index.js'
   },
+  output: {
+    filename: '[name].[hash].js',
+  //  chunkFilename: '[name].[hash].js',
+    path: path.resolve(__dirname, 'dist')
+    // publicPath: '/'
+  },
   plugins: [
-  /*  new webpack.DllPlugin({
-      name: '[name]',
-      path: './build/library/[name].json'
-   }),*/
-  //  new CleanWebpackPlugin(['dist']),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    /*new webpack.optimize.AggressiveSplittingPlugin({
+			minSize: 800000,
+			maxSize: 1000000
+		}),*/
     new HtmlWebpackPlugin({
+      inject: true,
       title: 'React-Webpack',
       favicon: 'src/common/images/favicon.ico',
       meta: {
         viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0',
         description: 'React 16 + Webpack 4 + Fontawesome + Bootstrap + Hotreolad'
       },
-      minify: true
-    }),
-    new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+      minify: true,
+    })
   ],
-  output: {
-    filename: '[name].[hash].js',
-    path: path.resolve(__dirname, 'dist')
-    // publicPath: '/'
-  },
   devServer:{
       port: 8080,
       historyApiFallback: true,
