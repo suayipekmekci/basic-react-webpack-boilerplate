@@ -3,7 +3,7 @@ Basic Starter kit for React 16 & Webpack 4.
 
 ## Features
 * Hot Module Replacement
-* Botstrap
+* Bootstrap
 * Fontawesome
 * React Router
 
