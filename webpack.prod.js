@@ -13,16 +13,16 @@ module.exports = merge(common, {
 			maxSize: 50000
 		}),*/
     new UglifyJSPlugin({
-      cache: true,
-      parallel: true,
-      sourceMap: true,
+      cache: false,
+      parallel: false,
+      sourceMap: false,
       uglifyOptions: {
-      warnings: false,
-      output: {
-        comments: false,
-        beautify: false
+        warnings: false,
+        output: {
+          comments: false,
+          beautify: false
+        }
       }
-    }
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
