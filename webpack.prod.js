@@ -52,5 +52,8 @@ module.exports = merge(common, {
         threshold: 10240,
         minRatio: 0.8
     })
-  ]
+  ],
+  stats: {
+    maxModules: 0
+  }
 });
