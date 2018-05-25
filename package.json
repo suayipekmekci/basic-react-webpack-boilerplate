@@ -1,5 +1,5 @@
 {
-  "name": "first",
+  "name": "React Webpack Starter",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -10,8 +10,19 @@
     "server": "node server.js",
     "build": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suayipekmekci/React-starter.git"
+  },
+  "keywords": [
+    "react",
+    "bootstrap",
+    "fontawesome",
+    "webpack 4",
+    "hot reload",
+    "quickstart"
+  ],
+  "author": "Şuayip Ekmekci",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
