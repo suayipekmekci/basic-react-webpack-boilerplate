@@ -8,17 +8,11 @@ module.exports = {
   },
   output: {
     filename: '[name].[hash].js',
-  //  chunkFilename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
-    // publicPath: '/'
   },
   plugins: [
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    /*new webpack.optimize.AggressiveSplittingPlugin({
-			minSize: 800000,
-			maxSize: 1000000
-		}),*/
     new HtmlWebpackPlugin({
       inject: true,
       title: 'React-Webpack',
