@@ -17,7 +17,7 @@ class Home extends React.Component {
           <Navbar.Collapse>
             <Nav pullRight>
               <NavItem eventKey={1} href="#/home">
-                HOMEssss
+                HOME
               </NavItem>
               <NavItem eventKey={2} href="#/about">
                 ABOUT

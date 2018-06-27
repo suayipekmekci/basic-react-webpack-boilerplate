@@ -5,7 +5,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="welcome">
-        WELCOME
+        WELCOME THE REACT STARTER KIT
       </div>
     );
   }
