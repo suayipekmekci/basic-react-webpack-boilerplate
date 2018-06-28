@@ -1,8 +1,8 @@
 {
-  "name": "react-webpack-starter",
+  "name": "basic-react-webpack-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --config webpack.dev.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/suayipekmekci/React-starter.git"
+    "url": "https://github.com/suayipekmekci/basic-react-webpack-boilerplate.git"
   },
   "keywords": [
     "react",
