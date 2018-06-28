@@ -1,5 +1,5 @@
 # React Webpack Starter  
-Basic Starter kit for React 16 & Webpack 4.  
+Basic Starter boilerplate for React 16 & Webpack 4.  
 
 ## Features  
 * Hot Module Replacement  
